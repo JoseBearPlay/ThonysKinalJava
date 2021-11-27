@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteServicios" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27bfebf7-e6ac-4e3a-bae2-030acdea5f19">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codServicio" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[call sp_ListarReporteServicio($P{codServicio})]]>
+	</queryString>
+	<field name="codigoTipoPlato" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcionTipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoPlato" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombrePlato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcionPlato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="precioPlato" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoServicio" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaServicio" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipoServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaServicio" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lugarServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoContacto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoProducto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreProducto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="572" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="752" height="572" uuid="2f1c1aa2-15a0-4d01-9bcd-2a28d6f09b0a"/>
+				<imageExpression><![CDATA["C:\\Users\\LAPTOP\\Documents\\NetBeansProjects\\TonysKinal2019070\\src\\org\\josesalazar\\image\\Hoja Membretada 2.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="225" y="0" width="300" height="35" uuid="0301a02f-0323-43d6-b424-89a4265874f4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cooper Black" size="28"/>
+				</textElement>
+				<text><![CDATA[Reporte De Servicios]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="35" width="752" height="1" uuid="057c4a5a-653c-45c8-b7f0-5e92f9138569"/>
+				<graphicElement>
+					<pen lineWidth="2.5" lineStyle="Dashed" lineColor="#000099"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="20" width="752" height="31" backcolor="#6699FF" uuid="e0f4d5cb-2407-4987-9934-58ad586ef19c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="22" width="212" height="29" uuid="1019e8d0-0620-43f2-8b49-d768b966dfb7"/>
+				<textElement>
+					<font fontName="Cooper Black" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad de platos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="20" width="150" height="29" uuid="910679a3-301a-4380-9abb-5d24e0c28293"/>
+				<textElement>
+					<font fontName="Cooper Black" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo de plato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="539" y="22" width="213" height="29" uuid="f2f00d2e-bd43-4a8e-b915-5bf0f224a472"/>
+				<textElement>
+					<font fontName="Cooper Black" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Productos de plato]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="54" width="752" height="1" uuid="a3843181-ce47-4988-ad36-52835a951657"/>
+				<graphicElement>
+					<pen lineWidth="2.5" lineStyle="Dashed" lineColor="#6600CC"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="212" height="20" uuid="74d14e4c-3d19-4029-8d04-841933aea454"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="2" width="227" height="20" uuid="9bcea185-f9e3-4be2-af99-efa5d130f0f1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{descripcionPlato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="539" y="0" width="213" height="20" uuid="aa5778f5-396d-4891-ae84-26df1eca47ea"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombreProducto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josesalazar.controller.Servicios_has_PlatosController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20Servicios_has_Platos.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="99.0" layoutY="44.0" text="Codigo Servicio" textFill="#00070a">
+         <font>
+            <Font name="Elephant" size="17.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="83.0" text="Codigo Plato" textFill="#0f011b">
+         <font>
+            <Font name="Elephant" size="16.0" />
+         </font></Label>
+      <TableView fx:id="tblServicios_has_Platos" layoutX="18.0" layoutY="127.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="colCodigoServicio" prefWidth="259.0" text="Codigo Servicio" />
+          <TableColumn fx:id="colCodigoPlato" prefWidth="314.0" text="Codigo Plato" />
+        </columns>
+      </TableView>
+      <Label layoutX="200.0" prefHeight="43.0" prefWidth="211.0" text="Servicios_has_Platos">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font></Label>
+      <ComboBox fx:id="cmbCodigoServicio" layoutX="363.0" layoutY="43.0" prefHeight="25.0" prefWidth="217.0" promptText="Codigo Servicios" />
+      <ComboBox fx:id="cmbCodigoPlato" layoutX="363.0" layoutY="80.0" prefHeight="25.0" prefWidth="217.0" promptText="Codigo Plato" />
+      <ImageView fitHeight="49.0" fitWidth="63.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Salirr.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

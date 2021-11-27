@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josesalazar.controller.EmpleadosController">
+   <children>
+      <ImageView fitHeight="648.0" fitWidth="910.0" layoutX="-2.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20Empleados.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="357.0" layoutY="18.0" text="Empleado">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblEmpleados" layoutX="22.0" layoutY="305.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="879.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpleado" prefWidth="85.33333587646484" text="Cod Empleado" />
+          <TableColumn fx:id="colNumeroEmpleado" prefWidth="111.33332824707031" text="Numero Empleado" />
+            <TableColumn fx:id="colApellidosEmpleado" prefWidth="116.0" text="Apellidos Empleado" />
+            <TableColumn fx:id="colNombresEmpleado" prefWidth="115.66665649414062" text="Nombres Empleado" />
+            <TableColumn fx:id="colDireccionEmpleado" prefWidth="118.0" text="Direccion Empleado" />
+            <TableColumn fx:id="colTelefonoContacto" prefWidth="110.0" text="Telefono Contacto" />
+            <TableColumn fx:id="colGradoCocinero" prefWidth="95.66668701171875" text="Grado Cocinero" />
+            <TableColumn fx:id="colCodigoTipoEmpleado" prefWidth="122.3333740234375" text="Cod Tipo Empleado" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="34.0" layoutY="527.0" mnemonicParsing="false" onAction="#Nuevo" prefHeight="68.0" prefWidth="116.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="264.0" layoutY="524.0" mnemonicParsing="false" onAction="#Eliminar" prefHeight="68.0" prefWidth="116.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="500.0" layoutY="524.0" mnemonicParsing="false" onAction="#Editar" prefHeight="68.0" prefWidth="116.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="729.0" layoutY="524.0" mnemonicParsing="false" onAction="#Reporte" prefHeight="68.0" prefWidth="116.0" text="Reporte" />
+      <AnchorPane layoutX="-1.0" layoutY="-10.0" prefHeight="90.0" prefWidth="128.0">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="133.0" layoutX="-1.0" layoutY="1.0" onMouseClicked="#ventanaTipoEmpleado" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Fondo%20Tipo%20Empleado.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="94.0" layoutY="96.0" prefHeight="181.0" prefWidth="679.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="177.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="160.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="181.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="0.0" prefWidth="161.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Codigo Empleado" textFill="#ffe711">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Numero Empleado" textFill="#2bff2f" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Apellidos Empleado" textFill="#e40505" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Nombres Empleado" textFill="#4486b2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtCodigoEmpleado" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="txtNumeroEmpleado" editable="false" prefHeight="25.0" prefWidth="269.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtApellidosEmpleado" editable="false" prefHeight="25.0" prefWidth="201.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtNombresEmpleado" editable="false" prefHeight="25.0" prefWidth="201.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+            </TextField>
+            <Label text="Direccion Empleado" textFill="#ffb900" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="24.0" prefWidth="164.0" text="Telefono Contacto" textFill="#a40f70" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtTelefonoContacto" editable="false" prefHeight="25.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label text="Grado Cocinero" textFill="#32fc24" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtGradoCocinero" editable="false" prefHeight="25.0" prefWidth="262.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label text="Cod Tipo Empleado" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.9571428571428572" endY="0.080952380952381" startX="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="0.6219931271477663" />
+                        <Stop color="#164ada" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="cmbTipoEmpleados" prefHeight="36.0" prefWidth="174.0" promptText="Tipo Empleados" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="txtDireccionEmpleado" editable="false" prefHeight="25.0" prefWidth="202.0" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

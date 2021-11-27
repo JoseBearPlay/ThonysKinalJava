@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josesalazar.controller.ReporteServiciosController">
+   <children>
+      <ImageView fitHeight="266.0" fitWidth="391.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20Reporte%20Servicios.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="141.0" text="Servicios" textFill="#66a9f2">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="42.0" text="Seleccione un codigo" textFill="#ff3f3f">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbServicios" layoutX="132.0" layoutY="73.0" prefWidth="150.0" promptText="Codigo Servicio" />
+      <Button layoutX="162.0" layoutY="122.0" mnemonicParsing="false" onAction="#generarReporte" text="Reporte">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="157.0" layoutY="158.0" mnemonicParsing="false" onAction="#ventanaReportes" text="Regresar">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

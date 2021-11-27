@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josesalazar.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="379.0" fitWidth="452.0" layoutX="1.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Thony´s%20Kinal%20Logo.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Design">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresas" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo Empleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanTipoPlato" text="Tipo Plato" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductos" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#Close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaReportes" text="Generador" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Entidades de union">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicios_has_Empleados" text="Servicios_has_Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicios_has_Platos" text="Servicios_has_Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductos_has_Platos" text="Productos_has_Platos" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manual de uso">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaManual" text="Manuales" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="470.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josesalazar.controller.DatosProgramadorController">
+   <children>
+      <ImageView fitHeight="470.0" fitWidth="470.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fodo%20Programador.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtResultado" editable="false" layoutX="132.0" layoutY="82.0" prefHeight="372.0" prefWidth="332.0" style="-fx-background-color: dimgray;" />
+      <Label fx:id="lblNombre" layoutX="143.0" layoutY="107.0" prefHeight="37.0" prefWidth="169.0" textFill="#b9990e">
+         <font>
+            <Font name="Times New Roman" size="26.0" />
+         </font></Label>
+      <Label fx:id="lblApellidos" layoutX="143.0" layoutY="177.0" prefHeight="37.0" prefWidth="176.0" textFill="#b9990e">
+         <font>
+            <Font name="Times New Roman" size="23.0" />
+         </font></Label>
+      <Label fx:id="lblCarrera" layoutX="149.0" layoutY="258.0" prefHeight="44.0" prefWidth="298.0" textFill="#b9990e">
+         <font>
+            <Font name="Times New Roman" size="23.0" />
+         </font></Label>
+      <Label fx:id="lblColegio" layoutX="149.0" layoutY="311.0" prefHeight="44.0" prefWidth="298.0" textFill="#b9990e">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtDatos" editable="false" layoutX="166.0" layoutY="13.0" prefHeight="63.0" prefWidth="298.0" style="-fx-background-color: dimgray;" />
+      <ImageView fitHeight="116.0" fitWidth="112.0" layoutX="14.0" layoutY="13.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Icono%20Thony´s.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnProgramador" layoutX="25.0" layoutY="177.0" mnemonicParsing="false" onAction="#botones" prefHeight="63.0" prefWidth="90.0" text="Programador" />
+      <Button fx:id="btnAsistente" layoutX="25.0" layoutY="284.0" mnemonicParsing="false" onAction="#botones" prefHeight="55.0" prefWidth="90.0" text="Asistencia" />
+      <Label fx:id="lblDatosProgramador" layoutX="174.0" layoutY="26.0" prefHeight="37.0" prefWidth="272.0" textFill="#b9aa0f">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="137.0" layoutX="321.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Foto%20Programador.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblContacto" layoutX="149.0" layoutY="368.0" prefHeight="44.0" prefWidth="279.0" textFill="#b9990e">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLimpiar" layoutX="25.0" layoutY="368.0" mnemonicParsing="false" onAction="#limpiarBotones" prefHeight="55.0" prefWidth="90.0" text="Limpiar" />
+   </children>
+</AnchorPane>

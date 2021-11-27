@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josesalazar.controller.TipoEmpleadoController">
+   <children>
+      <ImageView fitHeight="432.0" fitWidth="632.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20Tipo%20Empleado.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="210.0" layoutY="14.0" prefHeight="41.0" prefWidth="213.0" text="Tipo  Empleado" textFill="#0300a4">
+         <font>
+            <Font name="Book Antiqua" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="55.0" prefHeight="41.0" prefWidth="157.0" text="Codigo Tipo Empleado" textFill="#094d2b">
+         <font>
+            <Font name="Gabriola" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigoTipoEmpleado" editable="false" layoutX="180.0" layoutY="63.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="14.0" layoutY="96.0" prefHeight="25.0" prefWidth="157.0" text="Descripcion " textFill="#095b26">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescripcionTipoEmpleado" editable="false" layoutX="125.0" layoutY="99.0" prefHeight="25.0" prefWidth="493.0" />
+      <TableView fx:id="tblTipoEmpleado" layoutX="18.0" layoutY="141.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colCodigoTipoEmpleado" prefWidth="141.0" text="Codigo Tipo Empleado" />
+          <TableColumn fx:id="colDescripcion" prefWidth="458.0" text="Descripcion" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="20.0" layoutY="349.0" mnemonicParsing="false" onAction="#Nuevo" prefHeight="55.0" prefWidth="99.0" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="344.0" layoutY="349.0" mnemonicParsing="false" onAction="#Editar" prefHeight="55.0" prefWidth="99.0" text="Editar" />
+      <Button fx:id="btnEliminar" layoutX="171.0" layoutY="349.0" mnemonicParsing="false" onAction="#Eliminar" prefHeight="55.0" prefWidth="99.0" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="501.0" layoutY="349.0" mnemonicParsing="false" onAction="#reporte" prefHeight="55.0" prefWidth="99.0" text="Reporte" />
+      <AnchorPane layoutY="7.0" prefHeight="55.0" prefWidth="60.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="61.0" layoutX="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Salirr.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="526.0" prefHeight="67.0" prefWidth="106.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="106.0" layoutY="-2.0" onMouseClicked="#ventanaEmpleados" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Fondo%20Empleados.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

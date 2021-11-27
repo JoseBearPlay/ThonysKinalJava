@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josesalazar.controller.ManualesController">
+   <children>
+      <ImageView fitHeight="252.0" fitWidth="394.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20Plato.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="72.0" layoutY="14.0" text="Manuales de la Aplicacion" textFill="#1c251b">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnManualUsuario" layoutX="107.0" layoutY="66.0" mnemonicParsing="false" onAction="#imprimirManual" prefHeight="30.0" prefWidth="184.0" text="Manual de usuario" />
+      <Button fx:id="btnManualProcedimiento" layoutX="105.0" layoutY="126.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="184.0" text="Manual de procedimientos" />
+      <Button fx:id="btnRegresar" layoutX="171.0" layoutY="176.0" mnemonicParsing="false" onAction="#menuPrincipal" text="Regresar" />
+   </children>
+</AnchorPane>
